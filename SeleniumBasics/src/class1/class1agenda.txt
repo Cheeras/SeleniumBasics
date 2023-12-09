@@ -1,0 +1,116 @@
+High level agenda:
+================
+Introduction
+What is automation
+	1.It is process of converting manual effort into automated task
+	2.In Test automation by using special software/tools to control the execution of tests and
+	comparision of actual outcomes with predicted outcomes
+	3.with out assert statements test automation is useless
+	example: control all your home appliances with smart phone or tablate
+
+Benefits of automation:
+	1.Faster - Machines are faster than humans
+	2.Reliable - almost 90% it provides correct results
+	3.Consistency - Test will run in consistant manner even if you are run 1000 times
+	4.Reusability - We can use the same scripts for multiple environments
+	5.Repeatable - Same test can be executed multiple time with different set of data
+	6.Manual efforts saying - We can save manual effort time which can use in more productive manner
+	
+Different automation tools which we have in market
+	1.AutoIT - Desktop automation
+	2.Telrik from microsoft it is paid version
+	3.UTF/QTP from HP it is paid
+	4.Sahi  - Desktop automation
+	5.Selenium - Open source
+	6.Many more
+
+Tools covered 
+	1.Java(language)
+	2.Selenium(webdriver,grid)
+	3.TestNG- Unit test framework
+	4.Apache POI - when we are dealing with external test data we are using Apache POI
+		using apache poi can read data from .xls,.xlsx,.doc,.csv files etc
+	5.Apache Maven - build tool 
+	6.Auto IT - all windows activities we can automation(requires desktop automation)
+	7.Git,Github
+	8.Jenkins-CI-CD Process
+	9.REST Assured - API Testing
+	10.UI path(RPA) - 1 session
+
+what is selenium 
+	Selenium is free (open source) automated testing suite for webapplications across different broswers and platforms
+	Selenium automates broswers only
+	Testing done using selenium is called Selenium testing
+	Selenium is not just a single library but a suite of multiple library, each catering to different testing needs of an organization
+	It has four components
+	Selinium Integrated Development environment(IDE) - Plug and play
+	Selinium RC - deprecated in 2011 it self
+	Selenium webdriver
+	Selenium Grid
+	
+	Selenium RC and Selenium Webdriver combined and become Selenium 2 - new and improved Selenium 3
+		
+Selenium  has 4 components
+	1.Selenium IDE 
+	2.Selenium RC - is deprecated
+	3.Selenium WebDriver
+	4.Selenium Grid
+		
+Automation tools
+Future tools which we will cover in our training session
+Selenium Benefits
+	1.Open source - term we can source code you can do changes release your own version or tool
+	2.cross platform - mac, windows and linux and IOS platform as well
+	3.Cross broswer support - chrome - bi weekly release,FF - monthly for IE 11 stopped supporting from June 2022
+	4.Remote execution - if you to execute the automation scripts in remote virtual machines or remote system then we do using remote execution
+	5.parallel execution
+	6.Integration with multiple tools
+	7.And many more
+Limitations
+	1.can not automate windows application
+	2.100% automation is not always possible
+	3.we can not read images
+	4.Captcha,Bar Codes,Graphs,Pie charts, OTP can not be automated,CBA (can not be automated)
+	5.Setting up the stage
+	
+where we can use selenium
+	Functional
+		1.Smoke Testing
+		    Smoke test is done to make sure that the critical functionalities of the program are working fine
+			In smoke testing, the entire system is verified from end to end. 
+			
+			In sanity testing, on the other hand, only a particular component of the system gets verified. 
+			whereas sanity testing is done to check that newly added functionalities, bugs, etc., have been fixed.
+			The software build may be either stable or unstable during smoke testing. The software build is relatively stable at the time of sanity testing.
+			 
+		2.Regression Testing
+			
+		3.End to End Testing
+		
+	Not for Non functional or security testing
+
+Practice
+Assignments
+Time for exploring other topics as well
+
+After this course
+	1.You can automate any web application expect silver light application,silver light application can not allow element 
+	identification(sikuli or other tools)
+	2.You can automate windows based applications(partially)
+	3.you will be able to design STAF(Selenium Test Automation Framework)
+	4.If you are looking for job change then you can able to answer the questions
+	
+First java program
+Data types 
+Operators
+
+
+
+
+
+
+
+
+
+
+

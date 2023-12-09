@@ -1,0 +1,80 @@
+Class 6 high level agenda:
+===================
+1.Quick recap of last class
+2.List usage in selenium
+3.findelement vs findelements in selenium
+4.Iterator in java
+5.Set Interface of Collection
+6.Switch windows
+7.Handling alerts
+8.Handling frames
+9.method chaining
+10.Calenders,Auto Suggession
+11.Exception handling
+12.screen shots
+
+chrome driver service:
+======================
+The ChromeDriver class starts the ChromeDriver server process at creation and terminates 
+it when quit is called. This can waste a significant amount of time for large test suites 
+where a ChromeDriver instance is created per test. There are two options to remedy this:
+https://chromedriver.chromium.org/getting-started
+
+=============
+tagName usage in selenium 
+=========================
+In a webpage total dropdown count is 5
+In a webpage total link count is 50
+In a webpage total images count is 5
+and so on
+
+=============================
+Difference between findElement() and findElements() method
+
+findElement() will return single webelement, first matching one
+if the element is not found it will throw NoSuchElementException
+
+findElements() will returns list of webelements
+if the list is empty it won't throw any exception 
+
+Find all elements within the current page using the given mechanism.
+This method is affected by the 'implicit wait' times in force at the time of execution. 
+Whenimplicitly waiting, this method will return as soon as there are more than 0 items in thefound collection, 
+or will return an empty list if the timeout is reached.
+
+Specified by: findElements(...) in SearchContext
+Parameters:by The locating mechanism to useReturns:A list of all WebElements, 
+or an empty list if nothing matchesSee Also:org.openqa.selenium.Byorg.openqa.selenium.WebDriver.Timeouts
+==========================================================================
+Scenario to use findElements():
+==============================
+
+NoSuchWindowException-- trying to switch the window which is already closed
+for example - you are in child with you get the title of the page then you closed the window using driver.close()
+after that you are trying to get Current URL of the page you will get the NoSuchWindowException becauase you did not switched to
+any parent window or default content and current associated driver object is closed
+
+NoSuchElementException -- if the findElement method is not able to find the element it will throw NoSuchElementException
+
+NoSuchSessionException -- while working with multiple windows we offen see this exception if you closing all the windows
+by using driver.quite() method after that if you are trying to perform any other operations like getTitle() or getCurrenturl()
+
+==========================================================
+What is difference between driver.close() and driver.quit()
+
+driver.close() - will close the currently active window
+- will not close the back ground process of chrome<broswer> from task manager
+
+driver.quit() - will close the all associated windows for the webdriver
+- will close the back ground process of chrome<broswer> from task manager
+============================================================
+
+
+
+
+
+
+
+
+
+

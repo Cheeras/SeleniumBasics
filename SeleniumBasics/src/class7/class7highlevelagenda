@@ -1,0 +1,18 @@
+Class7 Highlevel agenda:
+=======================
+1.Alert
+2.Frames
+3.How to handle calender
+4.Handle autosuggessions
+5.Exception handling
+6.Screen shots
+7.Our first library
+
+Alerts:
+Java script alerts are changes its behaviour based on broswer
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert
+
+Bootstrap alerts and angular alerst are not chaged based on broswer
+can be handled via click function using webelement
+
+

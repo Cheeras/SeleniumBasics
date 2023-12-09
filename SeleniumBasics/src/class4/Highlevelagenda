@@ -1,0 +1,73 @@
+Highlevel agenda
+=================
+1.Inheritance in java
+	Inheritance in java is mechanism in which one object acquires all properties and 
+	behaviours of parent Object 
+	Properties means all the variable depends on which access specifiers are used
+	behaviours means methods 
+	In Simple words - Child class object can access all properties and behaviours of baseclass as well
+	Why to use Inheritance in Java:
+	==============================
+	For Method overriding(so runtime polymorphism can be achieved)
+	For Code reusability
+	
+	How to write inheritance
+	========================
+	class ChildClass extends BaseClass
+	{
+	variables..
+	methods()..
+	}
+	
+	4 scenarios for inheritance
+	==========================
+	1.Child class reference and child class object - This will allow to access all the methods from baseclass
+	and child class
+	2.Baseclass reference and Baseclass Object - This will allow to access only methods from baseclass only
+	3.Baseclass/Parent class ref and child class objcet - Only parent class methods and variable 
+	example:
+	ParentClass parent = new ChildClass();
+	4.ChildClass ref and BaseClass/ParentClass object - invalid scenario
+	
+	public access modifier accessible any where
+	default - it can be accessible with in same package only
+	
+	What is Polymorphism:
+		In Simple words one thing in multiple forms
+		Add()
+		Add(int a)
+		Add(int a,int b)
+	Type of Polymorphism
+		2 types
+		1.Overloading
+		2.Compile time
+		3.early binding
+		----------------
+		1.Overriding
+		2.Runtime polymorphism
+		3.Late binding
+	
+	Method Overloading:
+	methods can be overloaded if and only if method has same name and different signature
+	 
+	Signature
+	Signature always consists of 3 types 
+		1.Number of argument
+		2.Type of argument
+		3.Order of argument
+		
+Where you have used method overloading concept in your framework:
+================================================================
+Actions class 
+clickAndHold()
+clickAndHold(WebElement ele) - 
+		
+		
+2.Interface in java
+	
+3.Dropdown in java
+4.Xpath
+5.Css
+
+PageloadTimeOut:
+If the application home page is keep on loading we use PageloadTimeout it can be 30 sec or  2mins to load the page

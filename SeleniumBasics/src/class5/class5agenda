@@ -1,0 +1,14 @@
+class 5 agenda
+=============
+Interface:
+An Interface is behavioural contract between different systems
+Proper standard accross all different classes
+Interface contains only prototypes for methods there is no implementation for methods
+
+/*
+*An Interface is behavioural contract between different systems Interface contains only prototypes for 
+methods no implementations for methods
+*/
+public interface BankApplication{
+
+}

@@ -1,0 +1,43 @@
+Agenda of class8:
+================
+1.what is exception
+2.types of exception
+3.selenium exception
+4.how to handle selenium exception
+
+Exception Definition: 
+An exception is an event, which occurs during the execution of a program,
+that disrupts the normal flow of the program's instructions.
+
+Types of exception 
+
+Compile time exception - checked exception - exceptions which are checked by compiler are call
+run time exception - unchecked exception
+
+Throwable interface is parent for all exception hierarchy
+WebDriverException is Parent exception all selenium Exceptions
+List of Exceptions in Selenium 
+
+NoSuchElementException
+NoSuchFrameException
+NoSuchWindowException
+NoAlertPresentException
+NoSuchCookieException
+
+How to handle exceptions
+==========================
+by using try catch block
+1.try with atleast one catch block or finally block is required
+2.we need to handle the same exception or its parent 
+3.one try block can have multiple catch blocks 
+4.Order of catch blocks
+//when you are exception handling coding using try catch block always child class followed by Parent class
+// but not Parent class followed by child class
+dead code in exception handling
+throws is not way to handle -throw from one Statement or one method to another statement or method
+respective caller handle to handle the exception
+ 
+	
+
+
+

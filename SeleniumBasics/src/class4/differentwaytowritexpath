@@ -1,0 +1,94 @@
+Xpath and CSS
+==============
+These are few techniques to address elements inside a structured document like an 
+HTML or XML
+Both structured document as a tree of nodes
+Both have syntax and rulew which allow us to write queries to find Webelements
+
+xpath - / root element
+/html/body/../../..
+
+what is difference between single slash(/) and double slash(//)
+
+Single slash represent relative xpath
+Double slash represents absolute xpath
+
+CSS
+body>..>..>..>..>E
+
+Relative XPath:
+==============
+XPATH
+//Relative Path
+//E
+//div
+//img
+//a
+
+>CSS
+E
+div
+img
+a
+==================
+Single Attribute:
+================
+XPATH
+//E[@A]
+//div[@id]
+//img[@src]
+
+CSS
+=================
+E[A]
+div[id]
+img[src]
+============
+Xpath:
+======
+to find all href in page
+
+//a
+
+find all input tags
+
+//input
+
+all images in page
+
+//img
+
+//button[normalize-space()='Login']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

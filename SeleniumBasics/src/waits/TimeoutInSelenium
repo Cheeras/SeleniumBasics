@@ -1,0 +1,61 @@
+Different time out in Selenium:
+==============================
+1.PageloadTimeOut
+driver.manage().timeouts().pageLoadTime(time,unit);
+if you dont give driver.manage().timeouts().pageLoadTime(time,unit); your application is keep on waiting for the application 
+to load, in case it loading for more than 1 or 2 mins
+always it should be before driver.get();
+it will be applicable for all driver.get() methods in after driver.manage().timeouts().pageLoadTimeout(1,TimeUnit.SECONDS)
+
+PageloadTimeout is related the page loading
+Implicit wait,Explicit wait and Fluent Wait are related to webelment
+
+Implicit wait:
+==============
+1.if you give implicit wait default wait time it 250 milliseconds
+2.by default selenium will not add any wait time default is zero meaning if you don't give
+3.Implicit wait is universal wait for all elements of that particular session of the driver
+4.it will wait for element presence
+
+driver.manage().timeouts().implicitWait(20,TimeUnits.SECONDS);
+implicity wait is smart enough because username filed is loading in 5 seconds or if the login button is loading 15 mins
+
+implicit wait wait for all the webelement maximum of 20 seconds. in case if the webelement is loaded before 20 seconds it 
+will move on to next statement
+
+if any of the webelemnt is crossing this 20seconds then it will terminate your program
+
+How to write implicit wait:
+
+driver.manage().timeouts().implicityWait(10,TimeUnits.SECONDS);
+default waiting of implicitywait is 250 milliseconds
+============================
+Static wait and Dynamic wait
+============================
+Thread.sleep(5000);
+1.It is blind wait where it will stop or pause the main thread for 5 seconds
+2.even if we find the webelement before 5 seconds still it will wait for 5 seconds
+ 
+Dynamic Wait:
+ExplicitWait:
+===========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,46 @@
+Arrays:
+=======
+An array is an indexed collection of homogenious data elements
+
+Problem statement:
+=================
+Implement an application which will calculate 100 students average marks 
+
+one approach is 
+
+int studentA;
+int studentB;
+int studentC;
+int studentD;
+int studentE;
+int studentF;
+int studentG; ......
+
+this is tidious task
+
+Several variables at one place ?
+================================
+Array is list of variables
+
+declaration of array
+
+int [] arry;
+
+initialize the array and set it's size
+
+ arry = new array[3];
+ 
+ store the values in arrays
+ 
+ array index starts from zero 
+ 
+ arry[0] = 10;
+ arry[1] = 20;
+ arry[2] = 30;
+ 
+ once's we create an array we can not change the size of array
+ 
+ 
+
+
+

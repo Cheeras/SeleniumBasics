@@ -1,0 +1,23 @@
+Class3 Agenda:
+==============
+1.What is WebElement
+  Techincally WebElement is as interface
+  8 locators:
+  ========== 
+ 	id
+  	name
+  	classname
+  	linktext
+  	partial link text
+  	tagname
+  	xpath
+  	cssselector
+  
+2.Locators
+3.Attirbutes
+4.What is HTML-Tags(create your own tags)
+5.Interact with webelements
+6.Get State of WebElement
+7.Class 2 topics
+8.String
+9.Method overriding

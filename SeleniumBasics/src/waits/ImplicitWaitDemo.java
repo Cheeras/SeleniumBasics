@@ -29,6 +29,7 @@ public class ImplicitWaitDemo {
 		 * 2.by default selenium will not add any wait time default is zero meaning if you don't give
 		 * 3.Implicit wait is universal wait for all elements of that particular session of the driver
 		 * 4.it will wait for element presence
+		 * 5.if the webelement is not found with in specified time it will through NoSuchElementException
 		 * */
 		driver.findElement(By.id("signInName")).sendKeys("Testing");
 		driver.quit();

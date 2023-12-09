@@ -1,0 +1,19 @@
+High level agenda:
+=================
+1.Actions class
+	All the complex operation like double click,right click and mouse hover and key board operations
+	these all not part of webelement this is part of separate class called Actions class
+	Complex gestures we will use Actions
+	In Mobile devices TouchActions class
+2.Fluent Wait
+3.JavascriptExecutor
+	it is an interface
+	it is similar to TakesScreenShot
+	what is use of executing javascript in java because they 
+	Java Script can change the dom structure as well
+4.DesiredCapability
+  	This class deprecated in selenium 3.6 version
+  	To implement DesiredCapabilities we have to use other classes
+  	It is way of chaning the broswer behaviour- specific setting , profile ,maximise mode ...etc
+  
+5.How to handle untrusted certificate in Selenium

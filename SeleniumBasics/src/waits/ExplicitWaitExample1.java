@@ -8,28 +8,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ExplicitWaitDemo {
+public class ExplicitWaitExample1 {
 
 	public static void main(String[] args) {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Shankar\\Desktop\\SeleniumJars\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://www.foundit.in/");
+		driver.get("https://seleniumpractise.blogspot.com/2019/01/alert-demo.html");
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//button[text()='Try it']")).click();
 		
-		driver.findElement(By.xpath("//a[text()='Register']")).click();
-		//Explicit wait
+		//waiting for the alert to present on page
 		
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.urlContains("registration"));//registration
-		
-		wait.until(ExpectedConditions.titleContains("Registration"));
-		wait.until(ExpectedConditions.titleIs("Registration | foundit India"));
-		
-		
+		WebDriverWait wait = new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.alertIsPresent()).accept();
 
 	}
 

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ExplicitWaitDemo {
+public class ExplicitWaitExample2 {
 
 	public static void main(String[] args) {
 		
@@ -16,19 +16,11 @@ public class ExplicitWaitDemo {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://www.foundit.in/");
-		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
-		driver.findElement(By.xpath("//a[text()='Register']")).click();
-		//Explicit wait
+		driver.get("https://demo.automationtesting.in/Alerts.html");
+		driver.findElement(By.xpath("//div[@id='OKTab']//button")).click();
 		
 		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.urlContains("registration"));//registration
-		
-		wait.until(ExpectedConditions.titleContains("Registration"));
-		wait.until(ExpectedConditions.titleIs("Registration | foundit India"));
-		
+		wait.until(ExpectedConditions.alertIsPresent()).accept();
 		
 
 	}

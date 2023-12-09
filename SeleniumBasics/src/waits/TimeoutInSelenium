@@ -16,6 +16,7 @@ Implicit wait:
 2.by default selenium will not add any wait time default is zero meaning if you don't give
 3.Implicit wait is universal wait for all elements of that particular session of the driver
 4.it will wait for element presence
+5.if the element is not found with in the specific amount of time then it will through NoSuchElementException
 
 driver.manage().timeouts().implicitWait(20,TimeUnits.SECONDS);
 implicity wait is smart enough because username filed is loading in 5 seconds or if the login button is loading 15 mins
@@ -38,24 +39,7 @@ Thread.sleep(5000);
  
 Dynamic Wait:
 ExplicitWait:
-===========
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+============
+default polling time is 500 mill seconds
+ExplicitWait is dynamic wait until the Specific amount of time
+if the ExpectedCondition fails it will throw TimeoutException

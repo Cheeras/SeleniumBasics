@@ -1,0 +1,45 @@
+High level agenda:
+=================
+1.Actions class
+	All the complex operation like double click,right click and mouse hover and key board operations
+	these all not part of webelement this is part of separate class called Actions class
+	Complex gestures we will use Actions
+	In Mobile devices TouchActions class
+	swipe left,swipe right
+2.Fluent Wait
+3.JavascriptExecutor
+	it is an interface
+	it is similar to TakesScreenShot
+	what is use of executing javascript in java because they 
+	Java Script can change the dom structure as well, it can change HTML at run time
+4.DesiredCapability
+  	This class deprecated in selenium 3.6 version
+  	currenly we are using selenium 3.14 versios now
+  	To implement DesiredCapabilities we have to use other classes
+  	It is way of changing the broswer behaviour - specific setting , profile ,maximize mode ...etc
+  
+5.How to handle untrusted certificate in Selenium
+	it is part of desired capabilitie
+
+6.Maven 
+	 Maven is a build automation tool/Project management tool used primarily for Java projects.
+	 Maven is project management tool based on POM.xml (Project object model)
+	 Maven can also be used to build and manage projects written in C#, Ruby, Scala, and other languages
+
+7.What is Maven life cycle:
+	Maven Lifecycle: Below is a representation of the default
+	Maven lifecycle and its 8 steps: Validate, Compile, Test, Package, Integration test, Verify, Install, and Deploy.
+	
+	1.Validate: This step validates if the project structure is correct. 
+	For example – It checks if all the dependencies have been downloaded and are available in the local repository.
+	2.Compile: It compiles the source code, converts the .java files to .class, and
+	 stores the classes in the target/classes folder.
+	3.Test: It runs unit tests for the project.
+	4.Package: This step packages the compiled code in a distributable format like JAR or WAR.
+	5.Integration test: It runs the integration tests for the project.
+	6.Verify: This step runs checks to verify that the project is valid and meets the quality standards.
+	7.Install: This step installs the packaged code to the local Maven repository.
+	8.Deploy: It copies the packaged code to the remote repository for sharing it with other developers
+	
+	Selenium java jar name : selenium-server-standalone-3.141.59.jar
+	

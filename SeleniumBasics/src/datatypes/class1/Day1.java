@@ -1,4 +1,4 @@
-package class1;
+package datatypes.class1;
 
 public class Day1 {
 

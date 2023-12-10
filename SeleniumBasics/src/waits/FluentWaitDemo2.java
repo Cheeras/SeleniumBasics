@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import com.google.common.base.Function;
 
-public class FluentWaitDemo {
+public class FluentWaitDemo2 {
 
 	public static void main(String[] args) {
 
@@ -25,8 +25,8 @@ public class FluentWaitDemo {
 		
 		driver.findElement(By.xpath("//button[text()='Click me to start timer']")).click();
 		Wait<WebDriver> wait  = new FluentWait<WebDriver>(driver)
-				.withTimeout(20,TimeUnit.SECONDS)
-				.pollingEvery(500,TimeUnit.MILLISECONDS)
+				.withTimeout(Duration.ofSeconds(20))
+				.pollingEvery(Duration.ofMillis(500))
 				.ignoring(NoSuchElementException.class);
 		
 		wait.until(new Function<WebDriver,WebElement>(){

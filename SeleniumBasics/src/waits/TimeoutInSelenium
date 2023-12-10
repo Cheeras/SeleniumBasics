@@ -43,3 +43,68 @@ ExplicitWait:
 default polling time is 500 mill seconds
 ExplicitWait is dynamic wait until the Specific amount of time
 if the ExpectedCondition fails it will throw TimeoutException
+=============
+
+Fluent Wait:
+============
+FluentWait is class in selenium webdriver using this class we can wait until specific conditions are met
+
+In FluenWait we can change the default polling time based on our requirement
+
+Technical Details of Fluent Wait:
+===============================
+1. Fluent wait is part of package org.openqa.selenium.support.ui
+2. It is was implemention of Wait interface
+3. each fluent wait defines the maximum amount of time to wait for the condition and we can
+give the frequency with which to check the condition
+4. We can also ignore any exception while polling element such as NoSuchElementException in Selenium
+
+How to implement FluentWait in selenium 
+=======================================
+Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+.withTimeout(60,SECONDS)
+.pollingEvery(2,SECONDS)
+.ignoring(NoSuchElementException.class);
+
+
+WebElement foo = wait.untill(new Function<WebDriver,WebElement>(){
+public WebElement apply(WebDriver driver){
+return driver.findElement(By.id("foo"));
+}
+});
+===================================
+Handle SSL Certificates:
+=========================
+Whenever we try to access HTTPS website or application so many times you will face untrusted SSL certificate issue
+This certificates come in multiple condtions we should know all of them so that we can rectify them easily
+1. Each Secure site has Certificate so its certificate is not valid up to date
+2. Certificate has been expired on date
+3. Certificate is only valid for (Site name)
+4. Certificate is not trusted because the issuer certificate unknown due to many reasons.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

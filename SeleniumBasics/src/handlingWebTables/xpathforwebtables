@@ -1,0 +1,12 @@
+To find all rows in a table:
+//table[@class='dataTable']//tbody//tr
+
+columns
+//table[@class='dataTable']//thead//th
+
+list of all 4 column values in webtable
+
+//table[@class='dataTable']//tbody//tr//td[4]
+
+//find all the 4th column values from the given table
+//table[@class='dataTable']//tbody//tr[5]//td[4]
